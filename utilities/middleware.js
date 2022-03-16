@@ -44,8 +44,14 @@ module.exports.validateCampground = (req, res, next) => {
 }
 
 module.exports.validateReview = (req, res, next) => {
+    const { id } = req.params;
+    const { rating } = req.body.review;
     const { error } = reviewSchema.validate(req.body);
     if (error) {
+        if (rating < 1 || rating > 5) {
+            req.flash('error', 'Please select a rating between 1 to 5 stars.')
+            return res.redirect(`/campgrounds/${id}`);
+        }
         const msg = error.details.map(element => element.message).join(',')
         throw new ExpressError(400, msg)
     }
