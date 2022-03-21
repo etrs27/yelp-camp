@@ -23,7 +23,6 @@ module.exports.add = async (req, res, next) => {
     campground.images = req.files.map(f => ({ url: f.path, filename: f.filename }));
     campground.author = req.user._id;
     await campground.save();
-    console.log(campground)
     req.flash('success', 'You have successfully made a new campground!');
     res.redirect(`/campgrounds/${campground._id}`)
 }
@@ -39,7 +38,6 @@ module.exports.read = async (req, res, next) => {
         req.flash('error', "Cannot find that campground!");
         return res.redirect('/campgrounds');
     }
-    console.log(campground)
     res.render('campgrounds/details', { campground });
 }
 

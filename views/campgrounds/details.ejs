@@ -7,11 +7,15 @@
 
             <div id="campgroundCarousel" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
-                    <% campground.images.forEach((img, i) => { %>
-                        <div class="carousel-item <%= i === 0 ? 'active' : '' %>">
-                            <img src="<%= img.url %>" class="d-block w-100" alt="">
-                        </div>
-                    <% }) %>
+                    <% if (campground.images.length) { %>
+                        <% campground.images.forEach((img, i) => { %>
+                            <div class="carousel-item <%= i === 0 ? 'active' : '' %>">
+                                <img src="<%= img.url %>" class="d-block w-100" alt="">
+                            </div>
+                        <% }) %>
+                    <% } else { %>
+                        <img class="img-fluid" src="https://res.cloudinary.com/etrs27/image/upload/v1647777247/Yelp-Camp/f6xae4zkfs37rj7zdfgn.jpg" alt="">
+                    <% } %>
                 </div>
                 <% if (campground.images.length > 1) { %>
                 <button class="carousel-control-prev" type="button" data-bs-target="#campgroundCarousel"
@@ -120,5 +124,6 @@
     
     <script>
         const mapToken = '<%- process.env.MAPBOX_TOKEN %>';
+        const campground = <%- JSON.stringify(campground) %>;
     </script>
     <script src="/javascripts/detailsPageMap.js"></script>
