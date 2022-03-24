@@ -2,6 +2,7 @@ const mongoose = require('mongoose');
 const cities = require('./cities');
 const { places, descriptors } = require('./seedHelpers');
 const Campground = require('../models/campground');
+const Review = require('../models/review');
 
 mongoose.connect('mongodb://localhost:27017/yelp-camp')
 
@@ -41,7 +42,8 @@ const seedDB = async () => {
                     url: 'https://res.cloudinary.com/etrs27/image/upload/v1647713540/Yelp-Camp/t0rmaf1kabu7lu0xdi2i.jpg',
                     filename: 'Yelp-Camp/tkth60mucimrcgiwkqhn'
                 }
-            ]
+            ],
+            reviews: '623cbb51af5da339c7069a7a'
         })
         await camp.save();
     }
