@@ -1,6 +1,6 @@
 body {
     height: 100vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("https://res.cloudinary.com/etrs27/image/upload/v1648113160/Yelp-Camp/homepage/cub-scout_egiwai.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("https://res.cloudinary.com/etrs27/image/upload/v1648113160/Yelp-Camp/page-images/cub-scout_egiwai.jpg");
     background-size: cover;
     background-position: right 35% bottom 75%;
     text-shadow: 0 0.05rem 0.1rem rgba(0, 0, 0, 0.5);
