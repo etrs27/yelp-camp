@@ -33,14 +33,18 @@ const seedDB = async () => {
                     cities[random1000].latitude
                 ]
             },
-            images:  [
+            images: [
                 {
-                    url: 'https://res.cloudinary.com/etrs27/image/upload/v1647713540/Yelp-Camp/xkyvupludcdazoulovgr.jpg',
-                    filename: 'Yelp-Camp/xkyvupludcdazoulovgr'
+                    url: 'https://res.cloudinary.com/etrs27/image/upload/v1648241974/Yelp-Camp/hefrcnkbpugslsbgyi8c.jpg',
+                    filename: 'Yelp-Camp/hefrcnkbpugslsbgyi8c'
                 },
                 {
-                    url: 'https://res.cloudinary.com/etrs27/image/upload/v1647713540/Yelp-Camp/t0rmaf1kabu7lu0xdi2i.jpg',
-                    filename: 'Yelp-Camp/tkth60mucimrcgiwkqhn'
+                    url: 'https://res.cloudinary.com/etrs27/image/upload/v1648241974/Yelp-Camp/fdlfgunwgn6mqzpvzoap.jpg',
+                    filename: 'Yelp-Camp/fdlfgunwgn6mqzpvzoap'
+                },
+                {
+                    url: 'https://res.cloudinary.com/etrs27/image/upload/v1648241974/Yelp-Camp/e3uklhztgliucvk75lgb.jpg',
+                    filename: 'Yelp-Camp/e3uklhztgliucvk75lgb'
                 }
             ],
             reviews: '623cbb51af5da339c7069a7a'
