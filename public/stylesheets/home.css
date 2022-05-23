@@ -5,7 +5,7 @@ body {
         rgba(0, 0, 0, 0.7)),
         url("https://res.cloudinary.com/etrs27/image/upload/v1648113160/Yelp-Camp/page-images/cub-scout_egiwai.jpg");
     background-size: cover;
-    background-position: right 35% bottom 55%;
+    background-position: right 30% top 30%;
     text-shadow: 0 0.05rem 0.1rem rgba(0, 0, 0, 0.5);
     box-shadow: inset 0 0 5rem rgba(0, 0, 0, 0.5);
 }

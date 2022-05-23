@@ -1,19 +1,19 @@
 <% layout('layouts/boilerplate') %>
-    <div class="mb-5" id="cluster-map"></div>
-    <h1 class="text-center mb-4">All Campgrounds</h1>
+    <div class="my-5" id="cluster-map"></div>
+    <h1 class="mb-4 text-center index--title">All Campgrounds</h1>
     <% for (let campground of campgrounds) { %>
-        <div class="card mb-4">
-            <div class="row">
+        <div class="card mb-3 index--card text-bg-light shadow">
+            <div class="row g-0">
                 <div class="col-md-4">
                     <% if (campground.images.length) { %>
-                        <img class="img-fluid" src="<%= campground.images[0].url %>" alt="">
+                        <img class="img-fluid rounded-start index--image" src="<%= campground.images[0].url %>" alt="">
                     <% } else { %>
-                        <img class="img-fluid" src="https://res.cloudinary.com/etrs27/image/upload/v1647777247/Yelp-Camp/f6xae4zkfs37rj7zdfgn.jpg" alt="">
+                        <img class="img-fluid rounded-start index--image" src="https://res.cloudinary.com/etrs27/image/upload/v1647777247/Yelp-Camp/f6xae4zkfs37rj7zdfgn.jpg" alt="">
                     <% } %>
                 </div>
-                <div class="col-md-8">
+                <div class="col-md-8 text-center m-auto">
                     <div class="card-body">
-                        <h5 class="card-title"><%= campground.title %></h5>
+                        <h4 class="card-title"><%= campground.title %></h4>
                         <p class="card-text"><%= campground.description %></p>
                         <p class="card-text">
                             <small class="text-muted"><%= campground.location %></small>
