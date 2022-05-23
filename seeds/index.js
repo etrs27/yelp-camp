@@ -34,16 +34,16 @@ const seedDB = async () => {
             },
             images: [
                 {
-                    url: 'https://res.cloudinary.com/etrs27/image/upload/v1648241974/Yelp-Camp/hefrcnkbpugslsbgyi8c.jpg',
-                    filename: 'Yelp-Camp/hefrcnkbpugslsbgyi8c'
+                    url: 'https://res.cloudinary.com/etrs27/image/upload/v1648241974/Yelp-Camp/page-images/t0rmaf1kabu7lu0xdi2i.jpg',
+                    filename: 'Yelp-Camp/page-images/t0rmaf1kabu7lu0xdi2i'
                 },
                 {
-                    url: 'https://res.cloudinary.com/etrs27/image/upload/v1648241974/Yelp-Camp/fdlfgunwgn6mqzpvzoap.jpg',
-                    filename: 'Yelp-Camp/fdlfgunwgn6mqzpvzoap'
+                    url: 'https://res.cloudinary.com/etrs27/image/upload/v1648241974/Yelp-Camp/page-images/campfire_qkxcaf.jpg',
+                    filename: 'Yelp-Camp/page-images/campfire_qkxcaf.jpg'
                 },
                 {
-                    url: 'https://res.cloudinary.com/etrs27/image/upload/v1648241974/Yelp-Camp/e3uklhztgliucvk75lgb.jpg',
-                    filename: 'Yelp-Camp/e3uklhztgliucvk75lgb'
+                    url: 'https://res.cloudinary.com/etrs27/image/upload/v1648241974/Yelp-Camp/page-images/relaxing-in-tent_uli8ci.jpg',
+                    filename: 'Yelp-Camp/page-images/relaxing-in-tent_uli8ci.jpg'
                 }
             ],
             reviews: '623cbb51af5da339c7069a7a'

@@ -35,7 +35,7 @@
                 </div>
                 <div class="mb-3">
                     <h5>Delete Image(s)</h5>
-                    <div class="row row-cols-1 row-cols-md-4 g-4 mb-3">
+                    <div class="row row-cols-1 row-cols-md-4 g-4 mb-5">
                         <% campground.images.forEach(function(img, i) { %>
                         <div class="col">
                             <div class="card">
@@ -49,10 +49,11 @@
                         <% }) %>
                     </div>    
                 </div>
-                <div class="mb-3">
+                <div class="button-group mb-3">
                     <button class="btn btn-info">Update Campground</button>
+                    <a class="btn btn-danger" href="/campgrounds/<%= campground._id %>">Cancel</a>
                 </div>
             </form>
-            <a href="/campgrounds/<%= campground._id %>">Back to Campground</a>
+            
         </div>
     </div>

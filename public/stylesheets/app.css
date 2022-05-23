@@ -6,6 +6,10 @@ p {
     font-weight: 300;
 }
 
+.navbar-brand {
+    margin: 0 7px 0 0;
+}
+
 .index--title {
     font-weight: 700;
 }
@@ -37,5 +41,13 @@ p {
 }
 
 .details--image {
-    object-fit: cover;
+    width: 100%;
+    height: 600px;
+    object-fit: fill;
+}
+
+.button-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }

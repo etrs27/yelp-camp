@@ -8,11 +8,11 @@
                     <% if (campground.images.length) { %>
                         <% campground.images.forEach((img, i) => { %>
                             <div class="carousel-item <%= i === 0 ? 'active' : '' %>">
-                                <img class="details--image img-fluid" src="<%= img.url %>" alt="campgrounds">
+                                <img class="d-block w-100 details--image narrow" src="<%= img.url %>" alt="campgrounds">
                             </div>
                         <% }) %>
                     <% } else { %>
-                        <img class="details--image img-fluid" src="https://res.cloudinary.com/etrs27/image/upload/v1647777247/Yelp-Camp/f6xae4zkfs37rj7zdfgn.jpg" alt="campgrounds">
+                        <img class="d-block w-100 details--image" src="https://res.cloudinary.com/etrs27/image/upload/v1647777247/Yelp-Camp/page-images/relaxing-in-tent_uli8ci.jpg" alt="campgrounds">
                     <% } %>
                 </div>
                 <% if (campground.images.length > 1) { %>
@@ -50,7 +50,7 @@
                             </li>
                         </ul>
                         <% if (currentUser && campground.author.equals(currentUser._id)) { %>
-                            <div class="card-body">
+                            <div class="card-body button-group">
                                 <a class="card-link btn btn-info"
                                     href="/campgrounds/<%= campground._id %>/edit">Edit</a>
                                 <form class="d-inline" action="/campgrounds/<%= campground._id %>?_method=DELETE"
