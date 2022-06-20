@@ -59,3 +59,7 @@ module.exports.validateReview = (req, res, next) => {
         next();
     }
 }
+
+module.exports.confirmation = (req, res, next) => {
+    
+}
